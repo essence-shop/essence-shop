@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essence Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="./images/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+<meta name="theme-color" content="#000000">
+
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar" id="home">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <span class="brand__tag">PERFUMES</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#destacados">Destacados</a>
+        <a href="#catalogo">Perfumes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1>Tienda de perfumes</h1>
+        <p>Minimalista. Directo. Comprás por WhatsApp con un toque.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#destacados">Ver destacados</a>
+          <a class="btn btn--ghost" href="#catalogo">Ver catálogo</a>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="hero__cardInner">
+          <p class="hero__cardTitle">Envíos / Retiro</p>
+          <p class="hero__cardText">Consultá stock y métodos de pago por WhatsApp.</p>
+          <div class="hero__chips">
+            <span class="chip">Árabes</span>
+            <span class="chip">Nicho</span>
+            <span class="chip">Diseñador</span>
+            <span class="chip">Testers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destacados -->
+  <section class="section" id="destacados">
+    <div class="container">
+      <div class="section__header">
+        <h2>Destacados</h2>
+        <p>Deslizá con las flechas para ver más.</p>
+      </div>
+
+      <div class="carousel" aria-label="Perfumes destacados">
+        <button type="button" class="carousel__btn" id="prevBtn" aria-label="Anterior">
+          ‹
+        </button>
+
+        <div class="carousel__viewport" id="carouselViewport">
+          <div class="carousel__track" id="carouselTrack">
+            <!-- Se llena por JS -->
+          </div>
+        </div>
+
+        <button type="button" class="carousel__btn" id="nextBtn" aria-label="Siguiente">
+          ›
+        </button>
+      </div>
+
+      <div class="carousel__dots" id="carouselDots" aria-label="Indicadores del carrusel">
+        <!-- dots por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <section class="section" id="catalogo">
+    <div class="container">
+      <div class="section__header">
+        <h2>Todos los perfumes</h2>
+        <p>Elegí el que mas te guste!</p>
+      </div>
+
+      <div class="grid" id="allPerfumesGrid">
+        <!-- Se llena por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__title">Redes</p>
+        <div class="footer__links">
+          <a href="https://www.instagram.com/essence.shop.ar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">Contacto</p>
+        <div class="footer__meta">
+          <p>WhatsApp: +54 280 467-6224</p>
+          <p>Email: parfum.shop.ar@gmail.com</p>
+          <p>Trelew, Chubut</p>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">Legal</p>
+        <p class="footer__meta">© <span id="year"></span> Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

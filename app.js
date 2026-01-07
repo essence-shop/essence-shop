@@ -21,13 +21,13 @@ const featuredPerfumes = [
   {
     name: "Hawas Ice ",
     desc: "Ultra fresco y vibrante, perfecto para el verano y el uso diario.",
-    price: "$80.000",
+    price: "$97.500",
     image: "./images/hawas-ice.PNG"
   },
   {
     name: "Club De Nuit Iconic",
     desc: "Fresco y potente, ideal para días de calor con buena presencia.",
-    price: "$72.250",
+    price: "$88.599",
     image: "./images/iconic.png"
   },
 ];
@@ -37,8 +37,14 @@ const allPerfumes = [
   {
     name: "Club De Nuit Urban Man Elixir",
     desc: "Elegante y intenso, con carácter moderno y gran duración.",
-    price: "$61.500",
+    price: "$75.500",
     image: "./images/urban-man-elixir.PNG"
+  },
+  {
+    name: "",
+    desc: "",
+    price: "$",
+    image: "./images/"
   },
 ]
 
